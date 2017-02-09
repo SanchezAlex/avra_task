@@ -1,0 +1,602 @@
+body {
+  font-family: 'RobotoRegular', sans-serif; }
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+  overflow: hidden; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none !important;
+  cursor: pointer; }
+
+p, h1, h2 {
+  margin: 0; }
+
+h1 {
+  color: #5a5a5a;
+  font-size: 58px;
+  font-weight: 100;
+  line-height: 46px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+input {
+  color: #5a5a5a;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 39px;
+  outline: none; }
+
+button {
+  outline: none; }
+
+.row {
+  margin: 0; }
+
+.bg_header {
+  background: url(../../img/fon_header.jpg) no-repeat 50%;
+  background-size: cover;
+  position: relative;
+  z-index: 0; }
+  .bg_header .mask {
+    background: url(../../img/mask_header.png) no-repeat 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; }
+  .bg_header .container .logo {
+    padding-top: 72px;
+    padding-left: 112px; }
+  .bg_header .container .titles_header {
+    padding-top: 130px; }
+    .bg_header .container .titles_header .title_1, .bg_header .container .titles_header .title_2 {
+      color: white;
+      font-size: 58px;
+      line-height: 69px;
+      font-weight: 100; }
+    .bg_header .container .titles_header .title_2 {
+      font-weight: 500; }
+  .bg_header .container .reg_header {
+    padding-top: 83px; }
+  .bg_header .container .description {
+    padding: 84px 90px 211px 100px; }
+    .bg_header .container .description p {
+      color: white;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 23px;
+      text-transform: uppercase; }
+
+.bg_footer {
+  background-image: linear-gradient(to top, #1a1c27 0%, #222533 100%); }
+  .bg_footer .container .wrap_footer {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .bg_footer .container .wrap_footer .cust_logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 44px; }
+    .bg_footer .container .wrap_footer .all_rights {
+      padding-top: 43px;
+      padding-bottom: 57px;
+      color: #b5b7b8;
+      font-size: 14px;
+      font-weight: 300; }
+
+.reg_btn {
+  background-color: #ed145b;
+  border-radius: 24px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.05), 0 10px 17px rgba(0, 0, 0, 0.16);
+  border-width: 0;
+  padding: 16px 46px 17px;
+  color: #f4f4f4;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 38px; }
+
+.reg_btn_2 {
+  padding: 15px 15px 14px 13px;
+  font-family: 'MyriadProRegular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.7; }
+  .reg_btn_2:hover {
+    color: #1104cb;
+    background: #17f017; }
+
+.bg_section_1 {
+  position: relative;
+  background-color: #f4f4f4; }
+  .bg_section_1 .container h1 {
+    padding: 102px 0 41px 59px; }
+    .bg_section_1 .container h1:after {
+      content: '';
+      width: 200px;
+      height: 2px;
+      background-color: #ed145b;
+      display: inline-block; }
+  .bg_section_1 .container .list_section_1 {
+    padding: 22px 0 105px 72px; }
+    .bg_section_1 .container .list_section_1 li {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: inline-block; }
+      .bg_section_1 .container .list_section_1 li img {
+        float: left; }
+      .bg_section_1 .container .list_section_1 li span {
+        padding-left: 60px;
+        color: #5a5a5a;
+        font-size: 29px;
+        font-weight: 300;
+        line-height: 46px; }
+      .bg_section_1 .container .list_section_1 li:nth-child(2) span, .bg_section_1 .container .list_section_1 li:last-child span {
+        line-height: 32px; }
+  .bg_section_1 .container .laptop_section_1 {
+    position: absolute;
+    right: 0;
+    bottom: -47px; }
+
+.section_2 {
+  background-color: #fff; }
+  .section_2 .container h1 {
+    padding-top: 152px; }
+  .section_2 .container ul {
+    padding: 75px 48px 143px 14px; }
+    .section_2 .container ul li .icon {
+      position: relative; }
+      .section_2 .container ul li .icon:after {
+        content: url("../../img/icons/arr_up.png");
+        display: block;
+        position: absolute;
+        top: -23px;
+        right: -43px; }
+    .section_2 .container ul li p {
+      padding-top: 43px;
+      color: #5a5a5a;
+      font-size: 29px;
+      font-weight: 300;
+      line-height: 29px; }
+    .section_2 .container ul li:nth-of-type(2) > .icon:after {
+      content: url("../../img/icons/arr_down.png");
+      top: 60px;
+      right: -90px; }
+    .section_2 .container ul li:nth-of-type(4) > p {
+      line-height: 53px; }
+
+.section_3 {
+  background-color: #f4f4f4; }
+  .section_3 .img_section_3 {
+    padding: 76px 25px 74px 0; }
+  .section_3 h1 {
+    padding: 150px 0 4px 20px;
+    color: #5a5a5a;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 48px; }
+    .section_3 h1 span {
+      font-size: 58px;
+      line-height: 52px; }
+    .section_3 h1:after {
+      content: '';
+      width: 200px;
+      height: 2px;
+      background-color: #ed145b;
+      display: inline-block; }
+  .section_3 .advantages {
+    padding: 67px 0 110px 20px; }
+    .section_3 .advantages li .checkmark {
+      display: inline-block;
+      margin-right: 23px;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      position: relative;
+      border: 2px solid #ff2868; }
+      .section_3 .advantages li .checkmark:after {
+        content: " ";
+        display: block;
+        width: 4px;
+        height: 6px;
+        border: solid #ff2868;
+        border-width: 0 1px 1px 0;
+        position: absolute;
+        left: 4px;
+        top: 2px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    .section_3 .advantages li .description {
+      color: #93aac9;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px; }
+  .section_3 .reg_advanatages {
+    padding-left: 20px; }
+
+.section_4 {
+  background: url(../../img/bg_reviews.png) no-repeat 50%;
+  position: relative;
+  background-size: cover;
+  z-index: 0; }
+  .section_4 .mask {
+    background: url(../../img/mask_reviews.png) no-repeat 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; }
+  .section_4 .container h1 {
+    padding-top: 107px;
+    color: #fff;
+    font-size: 58px;
+    font-weight: 100;
+    line-height: 52px; }
+  .section_4 .container #slider {
+    padding-top: 105px; }
+    .section_4 .container #slider .item {
+      padding: 0 39px;
+      color: white;
+      font-size: 25px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 40px; }
+  .section_4 .container .owl-carousel .owl-next,
+  .section_4 .container .owl-carousel .owl-prev {
+    position: absolute;
+    top: 65%; }
+  .section_4 .container .owl-prev {
+    left: 15px; }
+  .section_4 .container .owl-next {
+    right: 15px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .section_4 .container .registration {
+    margin: 83px 20px 105px;
+    padding-left: 199px;
+    padding-right: 201px;
+    background: #fff;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px; }
+    .section_4 .container .registration form h2 {
+      padding-top: 43px;
+      color: #5a5a5a;
+      font-size: 58px;
+      font-weight: 300;
+      line-height: 52px; }
+    .section_4 .container .registration form .name_email {
+      padding-top: 49px; }
+      .section_4 .container .registration form .name_email .name .p_name, .section_4 .container .registration form .name_email .name .p_email, .section_4 .container .registration form .name_email .email .p_name, .section_4 .container .registration form .name_email .email .p_email {
+        float: left;
+        color: #5a5a5a;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase; }
+      .section_4 .container .registration form .name_email .name .input_name, .section_4 .container .registration form .name_email .name .input_email, .section_4 .container .registration form .name_email .email .input_name, .section_4 .container .registration form .name_email .email .input_email {
+        width: 100%;
+        margin-top: 20px;
+        padding: 9px 10px; }
+      .section_4 .container .registration form .name_email .name .p_email, .section_4 .container .registration form .name_email .email .p_email {
+        font-family: 'RobotoCondensedRegular', sans-serif;
+        font-weight: 700; }
+    .section_4 .container .registration form .pass {
+      padding-top: 23px; }
+      .section_4 .container .registration form .pass .pass_wrap .p_pass {
+        float: left;
+        color: #5a5a5a;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase; }
+      .section_4 .container .registration form .pass .pass_wrap .input_pass_1, .section_4 .container .registration form .pass .pass_wrap .input_pass_2 {
+        width: 100%;
+        margin-top: 20px;
+        padding: 9px 10px; }
+    .section_4 .container .registration form .birth_wrap {
+      padding-top: 26px;
+      padding-bottom: 107px; }
+      .section_4 .container .registration form .birth_wrap .birth_date legend {
+        padding-bottom: 17px;
+        border: none; }
+        .section_4 .container .registration form .birth_wrap .birth_date legend .p_birth_date {
+          float: left;
+          color: #5a5a5a;
+          font-size: 14px;
+          line-height: 24px;
+          text-transform: uppercase; }
+      .section_4 .container .registration form .birth_wrap .birth_date #date {
+        margin-right: 15px;
+        padding: 10px 38px 11px 16px;
+        float: left;
+        background-color: #fafafa;
+        border: 1px solid #e6e6e6;
+        border-radius: 39px;
+        outline: none;
+        color: #bbb;
+        font-size: 12px;
+        line-height: 1.4; }
+      .section_4 .container .registration form .birth_wrap .birth_date #month {
+        margin: 0 15px;
+        padding: 10px 30px 11px 14px;
+        float: left;
+        background-color: #fafafa;
+        border: 1px solid #e6e6e6;
+        border-radius: 39px;
+        outline: none;
+        color: #bbb;
+        font-size: 12px;
+        line-height: 1.4; }
+      .section_4 .container .registration form .birth_wrap .birth_date #year {
+        margin-left: 15px;
+        padding: 11px 54px 10px 16px;
+        float: left;
+        background-color: #fafafa;
+        border: 1px solid #e6e6e6;
+        border-radius: 39px;
+        outline: none;
+        color: #bbb;
+        font-size: 12px;
+        line-height: 1.4; }
+    .section_4 .container .registration form .language legend {
+      padding-bottom: 17px;
+      border: none; }
+      .section_4 .container .registration form .language legend .p_language {
+        float: left;
+        color: #5a5a5a;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase; }
+    .section_4 .container .registration form .language #language {
+      padding: 11px 77px 10px 22px;
+      background-color: #fafafa;
+      border: 1px solid #e6e6e6;
+      border-radius: 39px;
+      outline: none;
+      color: #bbb;
+      font-size: 12px;
+      line-height: 1.4; }
+    .section_4 .container .registration form .language .reg_main {
+      line-height: 2.7; }
+    .section_4 .container .registration form select {
+      background: url("../../img/arrow_select.png") no-repeat 90%;
+      -webkit-appearance: none; }
+
+@media (min-width: 1240px) and (max-width: 1600px) {
+  h1 {
+    font-size: 41px; }
+  .bg_section_1 .container h1 {
+    padding: 80px 0 41px 59px; }
+  .bg_section_1 .container .list_section_1 {
+    padding: 15px 0 45px 72px; }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .bg_section_1 .container .list_section_1 li span {
+    font-size: 24px; }
+  .section_2 .container ul li p {
+    font-size: 20px; }
+  .section_3 h1 {
+    padding: 55px 0 4px 20px;
+    font-size: 41px; }
+  .section_3 h1 span {
+    font-size: 44px; }
+  .section_3 .advantages {
+    padding: 50px 0 60px 20px; }
+  .section_4 .container h1 {
+    font-size: 41px; }
+  .section_4 .container #slider {
+    padding-top: 60px; }
+  .section_4 .container #slider .item {
+    font-size: 20px; }
+  .section_4 .container .owl-carousel .owl-next, .section_4 .container .owl-carousel .owl-prev {
+    top: 57%; }
+  .section_4 .container .registration h2 {
+    font-size: 41px; } }
+
+@media (min-width: 992px) and (max-width: 1240px) {
+  .bg_header .container .description p {
+    font-size: 14px; }
+  h1 {
+    font-size: 31px; }
+  .bg_section_1 .container h1 {
+    padding: 50px 0 41px 120px; }
+  .bg_section_1 .container .list_section_1 {
+    padding: 15px 0 45px 124px; }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .bg_section_1 .container .list_section_1 li span {
+    font-size: 14px; }
+  .bg_section_1 .container .laptop_section_1 {
+    bottom: -27px; }
+  .section_2 .container ul {
+    padding: 75px 10px 102px 14px; }
+  .section_2 .container ul li p {
+    font-size: 16px; }
+  .section_3 h1 {
+    padding: 35px 0 4px 20px;
+    font-size: 31px; }
+  .section_3 h1 span {
+    font-size: 34px; }
+  .section_3 .advantages {
+    padding: 30px 0 40px 20px; }
+  .section_3 .advantages li .description {
+    font-size: 12px; }
+  .section_4 .container h1 {
+    font-size: 31px; }
+  .section_4 .container #slider {
+    padding-top: 40px; }
+  .section_4 .container #slider .item {
+    font-size: 16px; }
+  .section_4 .container .owl-carousel .owl-next, .section_4 .container .owl-carousel .owl-prev {
+    top: 37%; }
+  .section_4 .container .registration h2 {
+    font-size: 31px; }
+  .section_4 .container .registration {
+    padding: 0 80px; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg_header .container .description {
+    padding-bottom: 100px; }
+  .reg_btn {
+    padding: 10px 37px 10px; }
+  h1 {
+    font-size: 25px;
+    line-height: 30px; }
+  .bg_section_1 .container h1 {
+    padding: 55px 0 0 10px; }
+  .bg_section_1 .container .list_section_1 {
+    padding: 22px 0 35px 36px; }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .bg_section_1 .container .list_section_1 li span {
+    padding-left: 40px;
+    font-size: 15px; }
+  .bg_section_1 .container .laptop_section_1 {
+    bottom: -21px; }
+  .section_2 .container h1 {
+    padding-top: 90px; }
+  .section_2 .container ul li .icon:after {
+    top: -44px;
+    right: -68px; }
+  .section_2 .container ul li:nth-of-type(2) > .icon:after {
+    top: 79px;
+    right: -66px; }
+  .section_2 .container ul {
+    padding: 65px 48px 40px 14px; }
+  .section_2 .container ul li p {
+    font-size: 16px; }
+  .section_3 h1 {
+    padding: 35px 0 4px 20px;
+    font-size: 26px;
+    line-height: 28px; }
+  .section_3 h1 span {
+    font-size: 28px;
+    line-height: 21px; }
+  .section_3 .advantages {
+    padding: 19px 0 48px 20px; }
+  .section_3 .advantages li .description {
+    font-size: 12px;
+    line-height: 22px; }
+  .section_4 .container h1 {
+    padding-top: 72px;
+    font-size: 36px; }
+  .section_4 .container #slider {
+    padding-top: 75px; }
+  .section_4 .container #slider .item {
+    font-size: 17px;
+    line-height: 32px; }
+  .section_4 .container .registration {
+    margin: 54px 20px 68px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .section_4 .container .registration form h2 {
+    padding-top: 30px;
+    font-size: 30px; }
+  .section_4 .container .registration form .birth_wrap .birth_date #date {
+    margin-right: 0;
+    padding: 10px 28px 11px 16px; }
+  .section_4 .container .registration form .birth_wrap .birth_date #year {
+    margin-left: 0; }
+  .section_4 .container .registration form .language #language {
+    padding-right: 26px; }
+  .reg_btn_2 {
+    padding: 15px 11px 13px; } }
+
+@media (max-width: 768px) {
+  .bg_header .container .titles_header .title_1, .bg_header .container .titles_header .title_2, .bg_header .container .titles_header .title_2 {
+    font-size: 23px;
+    line-height: 36px; }
+  .bg_header .container .description {
+    padding: 74px 53px; }
+  .bg_header .container .description p {
+    font-size: 11px; }
+  h1 {
+    font-size: 25px; }
+  .bg_section_1 .container h1 {
+    padding: 67px 0 24px 17px; }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .bg_section_1 .container .list_section_1 {
+    padding: 22px 15px 45px; }
+  .bg_section_1 .container .list_section_1 li span {
+    padding-left: 30px;
+    color: #5a5a5a;
+    font-size: 15px; }
+  .bg_section_1 .container .laptop_section_1 {
+    position: initial; }
+  .section_2 .container ul {
+    padding: 75px 38px 50px; }
+  .section_2 .container h1 {
+    padding-top: 75px; }
+  .section_2 .container ul li p {
+    padding: 30px; }
+  .section_2 .container ul li p {
+    font-size: 17px; }
+  .section_2 .container ul li .icon:after,
+  .section_2 .container ul li:nth-of-type(2) > .icon:after {
+    content: ''; }
+  .section_3 h1,
+  .section_3 h1 span {
+    padding: 0;
+    font-size: 25px; }
+  .section_3 .advantages {
+    padding: 30px 0 70px 10px; }
+  .section_3 .reg_advanatages {
+    padding-bottom: 50px;
+    text-align: center; }
+  .section_4 .container h1 {
+    padding-top: 65px;
+    font-size: 25px; }
+  .section_4 .container #slider {
+    padding-top: 40px; }
+  .section_4 .container #slider .item {
+    padding: 0 39px;
+    font-size: 15px;
+    line-height: 32px; }
+  .section_4 .container .owl-carousel .owl-next, .section_4 .container .owl-carousel .owl-prev {
+    position: absolute;
+    top: 50%; }
+  .section_4 .container .registration {
+    margin: 40px 0 50px;
+    padding: 0 10px; }
+  .section_4 .container .registration form h2 {
+    padding-top: 23px;
+    font-size: 23px; }
+  .section_4 .container .registration form .name_email .name .input_name, .section_4 .container .registration form .name_email .name .input_email, .section_4 .container .registration form .name_email .name .input_email, .section_4 .container .registration form .name_email .email .input_name, .section_4 .container .registration form .name_email .email .input_email, .section_4 .container .registration form .name_email .email .input_email,
+  .pass_wrap {
+    margin: 15px 0; }
+  .section_4 .container .registration form .birth_wrap .birth_date #date {
+    margin-right: 0;
+    padding: 10px 27px 11px 16px; }
+  .section_4 .container .registration form .birth_wrap .birth_date #year {
+    margin-left: 0;
+    padding: 11px 30px 10px 16px; }
+  .birth_date {
+    margin-bottom: 15px; } }

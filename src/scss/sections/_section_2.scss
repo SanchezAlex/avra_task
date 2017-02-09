@@ -1,0 +1,38 @@
+.section_2 {
+  background-color: #fff;
+  .container {
+    h1 {
+      padding-top: 152px;
+    }
+    ul {
+      padding: 75px 48px 143px 14px;
+      li {
+        .icon {
+          position: relative;
+          &:after {
+            content: url("../../img/icons/arr_up.png");
+            display: block;
+            position: absolute;
+            top: -23px;
+            right: -43px;
+          }
+        }
+        p {
+          padding-top: 43px;
+          color: #5a5a5a;
+          font-size: 29px;
+          font-weight: 300;
+          line-height: 29px;
+        }
+        &:nth-of-type(2) > .icon:after {
+          content: url("../../img/icons/arr_down.png");
+          top: 60px;
+          right: -90px;
+        }
+        &:nth-of-type(4) > p {
+          line-height: 53px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.bg_footer {
+  background-image: linear-gradient(to top, #1a1c27 0%, #222533 100%);
+  .container {
+    .wrap_footer {
+      padding-left: 20px;
+      padding-right: 20px;
+      .cust_logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 44px;
+      }
+      .all_rights {
+        padding-top: 43px;
+        padding-bottom: 57px;
+        color: #b5b7b8;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}

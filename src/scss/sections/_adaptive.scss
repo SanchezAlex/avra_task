@@ -1,0 +1,302 @@
+@media (min-width: 1240px) and (max-width: 1600px) {
+  h1 {
+    font-size: 41px;
+  }
+  .bg_section_1 .container h1 {
+    padding: 80px 0 41px 59px;
+  }
+  .bg_section_1 .container .list_section_1 {
+    padding: 15px 0 45px 72px;
+  }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 20px;
+    padding-bottom: 20px;}
+  .bg_section_1 .container .list_section_1 li span {
+    font-size: 24px;
+  }
+  .section_2 .container ul li p {
+    font-size: 20px;
+  }
+  .section_3 h1 {
+    padding: 55px 0 4px 20px;
+    font-size: 41px;
+  }
+  .section_3 h1 span {
+    font-size: 44px;
+  }
+  .section_3 .advantages {
+    padding: 50px 0 60px 20px;
+  }
+  .section_4 .container h1 {
+    font-size: 41px;
+  }
+  .section_4 .container #slider {
+    padding-top: 60px;
+  }
+  .section_4 .container #slider .item {
+    font-size: 20px;
+  }
+  .section_4 .container .owl-carousel .owl-next, .section_4 .container .owl-carousel .owl-prev {
+    top: 57%;
+  }
+  .section_4 .container .registration h2 {
+    font-size: 41px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1240px) {
+  .bg_header .container .description p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 31px;
+  }
+  .bg_section_1 .container h1 {
+    padding: 50px 0 41px 120px;
+  }
+  .bg_section_1 .container .list_section_1 {
+    padding: 15px 0 45px 124px;
+  }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 10px;
+    padding-bottom: 10px;}
+  .bg_section_1 .container .list_section_1 li span {
+    font-size: 14px;
+  }
+  .bg_section_1 .container .laptop_section_1 {
+    bottom: -27px;
+  }
+  .section_2 .container ul {
+    padding: 75px 10px 102px 14px;
+  }
+  .section_2 .container ul li p {
+    font-size: 16px;
+  }
+  .section_3 h1 {
+    padding: 35px 0 4px 20px;
+    font-size: 31px;
+  }
+  .section_3 h1 span {
+    font-size: 34px;
+  }
+  .section_3 .advantages {
+    padding: 30px 0 40px 20px;
+  }
+  .section_3 .advantages li .description {
+    font-size: 12px;
+  }
+  .section_4 .container h1 {
+    font-size: 31px;
+  }
+  .section_4 .container #slider {
+    padding-top: 40px;
+  }
+  .section_4 .container #slider .item {
+    font-size: 16px;
+  }
+  .section_4 .container .owl-carousel .owl-next, .section_4 .container .owl-carousel .owl-prev {
+    top: 37%;
+  }
+  .section_4 .container .registration h2 {
+    font-size: 31px;
+  }
+  .section_4 .container .registration {
+    padding: 0 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg_header .container .description {
+    padding-bottom: 100px;
+  }
+  .reg_btn {
+    padding: 10px 37px 10px;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .bg_section_1 .container h1 {
+    padding: 55px 0 0 10px;
+  }
+  .bg_section_1 .container .list_section_1 {
+    padding: 22px 0 35px 36px;
+  }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .bg_section_1 .container .list_section_1 li span {
+    padding-left: 40px;
+    font-size: 15px;
+  }
+  .bg_section_1 .container .laptop_section_1 {
+    bottom: -21px;
+  }
+  .section_2 .container h1 {
+    padding-top: 90px;
+  }
+  .section_2 .container ul li .icon:after {
+    top: -44px;
+    right: -68px;
+  }
+  .section_2 .container ul li:nth-of-type(2) > .icon:after {
+    top: 79px;
+    right: -66px;
+  }
+  .section_2 .container ul {
+    padding: 65px 48px 40px 14px;
+  }
+  .section_2 .container ul li p {
+    font-size: 16px;
+  }
+  .section_3 h1 {
+    padding: 35px 0 4px 20px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .section_3 h1 span {
+    font-size: 28px;
+    line-height: 21px;
+  }
+  .section_3 .advantages {
+    padding: 19px 0 48px 20px;
+  }
+  .section_3 .advantages li .description {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .section_4 .container h1 {
+    padding-top: 72px;
+    font-size: 36px;
+  }
+  .section_4 .container #slider {
+    padding-top: 75px;
+  }
+  .section_4 .container #slider .item {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .section_4 .container .registration {
+    margin: 54px 20px 68px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section_4 .container .registration form h2 {
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .section_4 .container .registration form .birth_wrap .birth_date #date {
+    margin-right: 0;
+    padding: 10px 28px 11px 16px;
+  }
+  .section_4 .container .registration form .birth_wrap .birth_date #year {
+    margin-left: 0;
+  }
+  .section_4 .container .registration form .language #language {
+    padding-right: 26px;
+  }
+  .reg_btn_2 {
+    padding: 15px 11px 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg_header .container .titles_header .title_1, .bg_header .container .titles_header .title_2 {
+    font-size: 23px;
+    line-height: 36px;
+  }
+  .bg_header .container .description {
+    padding: 74px 53px;
+  }
+  .bg_header .container .description p {
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .bg_section_1 .container h1 {
+    padding: 67px 0 24px 17px;
+  }
+  .bg_section_1 .container .list_section_1 li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bg_section_1 .container  .list_section_1 {
+    padding: 22px 15px 45px;
+  }
+  .bg_section_1 .container .list_section_1 li span {
+    padding-left: 30px;
+    color: #5a5a5a;
+    font-size: 15px;
+  }
+  .bg_section_1 .container .laptop_section_1 {
+    position: initial;
+  }
+  .section_2 .container ul {
+    padding: 75px 38px 50px;
+  }
+  .section_2 .container h1 {
+    padding-top: 75px;
+  }
+  .section_2 .container ul li p {
+    padding: 30px;
+  }
+  .section_2 .container ul li p {
+    font-size: 17px;
+  }
+  .section_2 .container ul li .icon:after,
+  .section_2 .container ul li:nth-of-type(2) > .icon:after {
+    content: '';
+  }
+  .section_3 h1,
+  .section_3 h1 span {
+    padding: 0;
+    font-size: 25px;
+  }
+  .section_3 .advantages {
+    padding: 30px 0 70px 10px;
+  }
+  .section_3 .reg_advanatages {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .section_4 .container h1 {
+    padding-top: 65px;
+    font-size: 25px;
+  }
+  .section_4 .container #slider {
+    padding-top: 40px;
+  }
+  .section_4 .container #slider .item {
+    padding: 0 39px;
+    font-size: 15px;
+    line-height: 32px;
+  }
+  .section_4 .container .owl-carousel .owl-next, .section_4 .container .owl-carousel .owl-prev {
+    position: absolute;
+    top: 50%;
+  }
+  .section_4 .container .registration {
+    margin: 40px 0 50px;
+    padding: 0 10px;
+  }
+  .section_4 .container .registration form h2 {
+    padding-top: 23px;
+    font-size: 23px;
+  }
+  .section_4 .container .registration form .name_email .name .input_name, .section_4 .container .registration form .name_email .name .input_email, .section_4 .container .registration form .name_email .email .input_name, .section_4 .container .registration form .name_email .email .input_email,
+  .pass_wrap {
+    margin: 15px 0;
+  }
+  .section_4 .container .registration form .birth_wrap .birth_date #date {
+    margin-right: 0;
+    padding: 10px 27px 11px 16px;
+  }
+  .section_4 .container .registration form .birth_wrap .birth_date #year {
+    margin-left: 0;
+    padding: 11px 30px 10px 16px;
+  }
+  .birth_date {
+    margin-bottom: 15px;
+  }
+}

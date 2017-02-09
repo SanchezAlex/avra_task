@@ -1,0 +1,200 @@
+.section_4 {
+  background: url(../../img/bg_reviews.png) no-repeat 50%;
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+  .mask {
+    background: url(../../img/mask_reviews.png) no-repeat 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .container {
+    h1 {
+      padding-top: 107px;
+      color: #fff;
+      font-size: 58px;
+      font-weight: 100;
+      line-height: 52px;
+    }
+    #slider {
+      padding-top: 105px;
+      .item {
+        padding: 0 39px;
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 40px;
+      }
+    }
+    .owl-carousel .owl-next,
+    .owl-carousel .owl-prev {
+      position: absolute;
+      top: 65%;
+    }
+    .owl-prev {
+      left: 15px;
+    }
+    .owl-next {
+      right: 15px;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .registration {
+      margin: 83px 20px 105px;
+      padding-left: 199px;
+      padding-right: 201px;
+      background: #fff;
+      -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
+      border-radius: 24px;
+      form {
+        h2 {
+          padding-top: 43px;
+          color: #5a5a5a;
+          font-size: 58px;
+          font-weight: 300;
+          line-height: 52px;
+        }
+        .name_email {
+          padding-top: 49px;
+          .name, .email {
+            //display: inline-block;
+            .p_name {
+              float: left;
+              color: #5a5a5a;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: uppercase;
+            }
+            .input_name {
+              width: 100%;
+              margin-top: 20px;
+              padding: 9px 10px;
+            }
+            .p_email {
+              @extend .p_name;
+              font-family: 'RobotoCondensedRegular', sans-serif;
+              font-weight: 700;
+            }
+            .input_email {
+              @extend .input_name;
+            }
+          }
+        }
+        .pass {
+          padding-top: 23px;
+          .pass_wrap {
+            //display: inline-block;
+            .p_pass {
+              float: left;
+              color: #5a5a5a;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: uppercase;
+            }
+            .input_pass_1 {
+              width: 100%;
+              margin-top: 20px;
+              padding: 9px 10px;
+            }
+            .input_pass_2 {
+              @extend .input_pass_1;
+            }
+          }
+        }
+        .birth_wrap {
+          padding-top: 26px;
+          padding-bottom: 107px;
+          .birth_date {
+            legend {
+              padding-bottom: 17px;
+              border: none;
+              .p_birth_date {
+                float: left;
+                color: #5a5a5a;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+              }
+            }
+            #date {
+              margin-right: 15px;
+              padding: 10px 38px 11px 16px;
+              float: left;
+              background-color: #fafafa;
+              border: 1px solid #e6e6e6;
+              border-radius: 39px;
+              outline: none;
+              color: #bbb;
+              font-size: 12px;
+              line-height: 1.4;
+            }
+            #month {
+              margin: 0 15px;
+              padding: 10px 30px 11px 14px;
+              float: left;
+              background-color: #fafafa;
+              border: 1px solid #e6e6e6;
+              border-radius: 39px;
+              outline: none;
+              color: #bbb;
+              font-size: 12px;
+              line-height: 1.4;
+            }
+            #year {
+              margin-left: 15px;
+              padding: 11px 54px 10px 16px;
+              float: left;
+              background-color: #fafafa;
+              border: 1px solid #e6e6e6;
+              border-radius: 39px;
+              outline: none;
+              color: #bbb;
+              font-size: 12px;
+              line-height: 1.4;
+            }
+          }
+        }
+        .language {
+          legend {
+            padding-bottom: 17px;
+            border: none;
+            .p_language {
+              float: left;
+              color: #5a5a5a;
+              font-size: 14px;
+              line-height: 24px;
+              text-transform: uppercase;
+            }
+          }
+          #language {
+            padding: 11px 77px 10px 22px;
+            background-color: #fafafa;
+            border: 1px solid #e6e6e6;
+            border-radius: 39px;
+            outline: none;
+            color: #bbb;
+            font-size: 12px;
+            line-height: 1.4;
+          }
+          .reg_main {
+            line-height: 2.7;
+          }
+        }
+        select {
+          background: url("../../img/arrow_select.png") no-repeat 90%;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+}
