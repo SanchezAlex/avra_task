@@ -126,14 +126,8 @@ button {
 }
 
 .bg_footer .container .wrap_footer .cust_logo {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     padding-top: 44px;
 }
@@ -152,6 +146,8 @@ button {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.05), 0 10px 17px rgba(0, 0, 0, 0.16);
     border-width: 0;
     padding: 16px 46px 17px;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
     color: #f4f4f4;
     font-size: 15px;
     font-weight: 500;
@@ -164,6 +160,8 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: 0.7;
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
 }
 
 .reg_btn_2:hover {
@@ -238,7 +236,11 @@ button {
 }
 
 .section_2 .container ul li .icon:after {
-    content: url("../img/icons/arr_up.png");
+    content: '';
+    background-image: url(../img/sprite.png);
+    background-position: 0px -106px;
+    width: 123px;
+    height: 37px;
     display: block;
     position: absolute;
     top: -23px;
@@ -254,7 +256,11 @@ button {
 }
 
 .section_2 .container ul li:nth-of-type(2)>.icon:after {
-    content: url("../img/icons/arr_down.png");
+    content: '';
+    background-image: url(../img/sprite.png);
+    background-position: 0px -59px;
+    width: 123px;
+    height: 37px;
     top: 60px;
     right: -90px;
 }
@@ -317,7 +323,8 @@ button {
     left: 4px;
     top: 2px;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -384,7 +391,9 @@ button {
 .section_4 .container .owl-next {
     right: 15px;
     -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
@@ -393,6 +402,8 @@ button {
     padding-left: 199px;
     padding-right: 201px;
     background: #fff;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
     border-radius: 24px;
 }
 
@@ -482,6 +493,7 @@ button {
     color: #bbb;
     font-size: 12px;
     line-height: 1.4;
+    position: relative;
 }
 
 .section_4 .container .registration form .birth_wrap .birth_date #month {
@@ -539,8 +551,12 @@ button {
 }
 
 .section_4 .container .registration form select {
-    background: url("../img/arrow_select.png") no-repeat 90%;
+    background: url("../img/icons/arrow_select.png") no-repeat 90%;
     -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
 }
 
 @media (min-width: 1240px) and (max-width: 1600px) {

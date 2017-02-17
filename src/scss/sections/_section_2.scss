@@ -1,3 +1,5 @@
+@import "../../sprite/sprite";
+
 .section_2 {
   background-color: #fff;
   .container {
@@ -10,7 +12,8 @@
         .icon {
           position: relative;
           &:after {
-            content: url("../../img/icons/arr_up.png");
+            content: '';
+            @include sprite($arr-up);
             display: block;
             position: absolute;
             top: -23px;
@@ -25,7 +28,8 @@
           line-height: 29px;
         }
         &:nth-of-type(2) > .icon:after {
-          content: url("../../img/icons/arr_down.png");
+          content: '';
+          @include sprite($arr-down);
           top: 60px;
           right: -90px;
         }

@@ -1,14 +1,15 @@
-const gulp = require ('gulp');
-const browserSync = require ('browser-sync').create();
-const prettify = require ('gulp-jsbeautifier');
-const sass = require ('gulp-sass');
-const pump = require ('pump');
-const concat = require ('gulp-concat');
-const autoprefixer = require ('gulp-autoprefixer');
-const imagemin = require ('gulp-imagemin');
-const uglify = require ('gulp-uglify');
-const cleanCSS = require ('gulp-clean-css');
-const babel = require ('gulp-babel');
+const gulp = require ('gulp'),
+      browserSync = require ('browser-sync').create(),
+      prettify = require ('gulp-jsbeautifier'),
+      sass = require ('gulp-sass'),
+      pump = require ('pump'),
+      concat = require ('gulp-concat'),
+      autoprefixer = require ('gulp-autoprefixer'),
+      imagemin = require ('gulp-imagemin'),
+      uglify = require ('gulp-uglify'),
+      cleanCSS = require ('gulp-clean-css'),
+      babel = require ('gulp-babel'),
+      spritesmith = require('gulp.spritesmith');
 
 gulp.task('sync', () => {
     browserSync.init({
@@ -27,6 +28,16 @@ gulp.task('sass', () => gulp.src('./src/scss/**/*.scss')
 
 gulp.task('sass:watch', () => gulp.watch('./src/scss/**/*.scss', ['sass'])
 );
+
+gulp.task('sprite', () => {
+    let spriteData = gulp.src('./src/img/icons/*.png').pipe(spritesmith({
+        imgName: 'sprite.png',
+        cssName: 'sprite.scss',
+        padding: 10,
+        algorithm: 'top-down'
+    }));
+    return spriteData.pipe(gulp.dest('./src/sprite'));
+});
 
 gulp.task('prettify', () => gulp.src([
         './src/css/*.css',

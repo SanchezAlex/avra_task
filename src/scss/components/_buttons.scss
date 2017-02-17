@@ -4,6 +4,8 @@
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.05), 0 10px 17px rgba(0, 0, 0, 0.16);
   border-width: 0;
   padding: 16px 46px 17px;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
 
   color: #f4f4f4;
   font-size: 15px;
@@ -16,6 +18,8 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 0.7;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
   &:hover {
     color: #1104cb;
     background: #17f017;

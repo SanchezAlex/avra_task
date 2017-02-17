@@ -1,0 +1,123 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arr-down-name: 'arr_down';
+$arr-down-x: 0px;
+$arr-down-y: 59px;
+$arr-down-offset-x: 0px;
+$arr-down-offset-y: -59px;
+$arr-down-width: 123px;
+$arr-down-height: 37px;
+$arr-down-total-width: 123px;
+$arr-down-total-height: 143px;
+$arr-down-image: 'sprite.png';
+$arr-down: (0px, 59px, 0px, -59px, 123px, 37px, 123px, 143px, 'sprite.png', 'arr_down', );
+$arr-up-name: 'arr_up';
+$arr-up-x: 0px;
+$arr-up-y: 106px;
+$arr-up-offset-x: 0px;
+$arr-up-offset-y: -106px;
+$arr-up-width: 123px;
+$arr-up-height: 37px;
+$arr-up-total-width: 123px;
+$arr-up-total-height: 143px;
+$arr-up-image: 'sprite.png';
+$arr-up: (0px, 106px, 0px, -106px, 123px, 37px, 123px, 143px, 'sprite.png', 'arr_up', );
+$arrow-select-name: 'arrow_select';
+$arrow-select-x: 0px;
+$arrow-select-y: 0px;
+$arrow-select-offset-x: 0px;
+$arrow-select-offset-y: 0px;
+$arrow-select-width: 11px;
+$arrow-select-height: 6px;
+$arrow-select-total-width: 123px;
+$arrow-select-total-height: 143px;
+$arrow-select-image: 'sprite.png';
+$arrow-select: (0px, 0px, 0px, 0px, 11px, 6px, 123px, 143px, 'sprite.png', 'arrow_select', );
+$slider-arrow-name: 'slider_arrow';
+$slider-arrow-x: 0px;
+$slider-arrow-y: 16px;
+$slider-arrow-offset-x: 0px;
+$slider-arrow-offset-y: -16px;
+$slider-arrow-width: 15px;
+$slider-arrow-height: 33px;
+$slider-arrow-total-width: 123px;
+$slider-arrow-total-height: 143px;
+$slider-arrow-image: 'sprite.png';
+$slider-arrow: (0px, 16px, 0px, -16px, 15px, 33px, 123px, 143px, 'sprite.png', 'slider_arrow', );
+$spritesheet-width: 123px;
+$spritesheet-height: 143px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($arr-down, $arr-up, $arrow-select, $slider-arrow, );
+$spritesheet: (123px, 143px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../sprite/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

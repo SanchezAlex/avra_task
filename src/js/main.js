@@ -15,8 +15,8 @@ $(document).ready(() =>{
         singleItem: true,
         nav: true,
         navText: [
-            "<img	src='../img/slider_arrow.png'>",
-            "<img	src='../img/slider_arrow.png'>"
+            "<img	src='../img/icons/slider_arrow.png'>",
+            "<img	src='../img/icons/slider_arrow.png'>"
         ],
         responsive: {
             0: {

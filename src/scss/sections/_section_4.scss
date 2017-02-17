@@ -1,3 +1,5 @@
+@import "../../sprite/sprite";
+
 .section_4 {
   background: url(../../img/bg_reviews.png) no-repeat 50%;
   position: relative;
@@ -67,7 +69,6 @@
         .name_email {
           padding-top: 49px;
           .name, .email {
-            //display: inline-block;
             .p_name {
               float: left;
               color: #5a5a5a;
@@ -93,7 +94,6 @@
         .pass {
           padding-top: 23px;
           .pass_wrap {
-            //display: inline-block;
             .p_pass {
               float: left;
               color: #5a5a5a;
@@ -137,6 +137,7 @@
               color: #bbb;
               font-size: 12px;
               line-height: 1.4;
+              position: relative;
             }
             #month {
               margin: 0 15px;
@@ -191,8 +192,12 @@
           }
         }
         select {
-          background: url("../../img/arrow_select.png") no-repeat 90%;
+          background: url("../../img/icons/arrow_select.png") no-repeat 90%;
           -webkit-appearance: none;
+          -ms-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          position: relative;
         }
       }
     }
